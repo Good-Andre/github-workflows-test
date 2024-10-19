@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Oct 19 14:40:24 GMT 2024","Sat Oct 19 14:40:24 GMT 2024","452","","org.example.AttachmentTest","","org.example.AttachmentTest","testAnnotatedAttachments","testAnnotatedAttachments()",""
+"passed","Sat Oct 19 14:40:24 GMT 2024","Sat Oct 19 14:40:24 GMT 2024","2","","org.example.LabelsTest","","org.example.LabelsTest","testDynamicLabels","DisplayName: Создание Issue для авторизованного пользователя",""
+"passed","Sat Oct 19 14:40:25 GMT 2024","Sat Oct 19 14:40:26 GMT 2024","512","","org.example.StepsTest","","org.example.StepsTest","testAnnotatedStep","testAnnotatedStep()",""
+"passed","Sat Oct 19 14:40:21 GMT 2024","Sat Oct 19 14:40:24 GMT 2024","2588","","org.example.AttachmentTest","","org.example.AttachmentTest","testLambdaAttachments","testLambdaAttachments()",""
+"passed","Sat Oct 19 14:40:26 GMT 2024","Sat Oct 19 14:40:26 GMT 2024","553","","org.example.StepsTest","","org.example.StepsTest","testLambdaStep","testLambdaStep()",""
+"passed","Sat Oct 19 14:40:24 GMT 2024","Sat Oct 19 14:40:24 GMT 2024","1","","org.example.LabelsTest","","org.example.LabelsTest","testStaticLabels","DisplayName: Создание Issue для авторизованного пользователя",""
+"passed","Sat Oct 19 14:40:24 GMT 2024","Sat Oct 19 14:40:25 GMT 2024","833","","org.example.SelenideTest","","org.example.SelenideTest","testIssueSearch","testIssueSearch()",""
