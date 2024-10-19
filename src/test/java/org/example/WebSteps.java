@@ -26,18 +26,19 @@ public class WebSteps {
     @Step("Открываем таб Issues")
     public void openIssuesTab() {
         $("#issues-tab").click();
-        sleep(1000);
+//        sleep(1000);
     }
 
     @Step("Проверяем наличие Issues с номером {issue}")
     public void shouldSeeIssueWithNumber(int issue) {
         $(withText("#" + issue)).should(Condition.exist);
 //            $(withText("#8000" + issue)).should(Condition.exist);
-        sleep(2000);
+//        sleep(2000);
     }
 
+    @SuppressWarnings("UnusedReturnValue")
     @Attachment(value = "Screenshot", type = "image/png", fileExtension = "png")
     public byte[] takeScreenshot() {
-        return ((TakesScreenshot)WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.BYTES);
+        return ((TakesScreenshot) WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.BYTES);
     }
 }

@@ -23,11 +23,11 @@ public class LabelsTest {
 
     @Test
     public void testDynamicLabels() {
-        if (true) {
-            Allure.feature("Feature: Issue в репозитории");
-        } else {
-            Allure.feature("Feature: Issue не в репозитории");
-        }
+//        if (true) {
+//            Allure.feature("Feature: Issue в репозитории");
+//        } else {
+//            Allure.feature("Feature: Issue не в репозитории");
+//        }
         Allure.feature("Feature: Issue в репозитории");
         Allure.story("Story: Создание Issue");
         Allure.getLifecycle().updateTestCase(
@@ -38,15 +38,15 @@ public class LabelsTest {
         Allure.link("Testing", "https://github.com/inTesting/inTesting/issues/new");
     }
 
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.browser = "firefox";
-        Configuration.pageLoadStrategy = "eager";
-        Configuration.timeout = 5000;
-    }
-
-    @AfterAll
-    static void afterAll() {
-        closeWebDriver();
-    }
+//    @BeforeAll
+//    static void beforeAll() {
+//        Configuration.browser = "firefox";
+//        Configuration.pageLoadStrategy = "eager";
+//        Configuration.timeout = 5000;
+//    }
+//
+//    @AfterAll
+//    static void afterAll() {
+//        closeWebDriver();
+//    }
 }

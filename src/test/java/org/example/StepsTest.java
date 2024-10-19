@@ -27,12 +27,12 @@ public class StepsTest {
         // step("Кликаем по ссылке репозитория", context -> {});
         step("Открываем таб Issues", context -> {
             $("#issues-tab").click();
-            sleep(1000);
+//            sleep(1000);
         });
         step("Проверяем наличие Issues с номером " + ISSUE, context -> {
             $(withText("#" + ISSUE)).should(Condition.exist);
 //            $(withText("#8000" + ISSUE)).should(Condition.exist);
-            sleep(2000);
+//            sleep(2000);
         });
     }
 
@@ -49,15 +49,15 @@ public class StepsTest {
         steps.shouldSeeIssueWithNumber(ISSUE);
     }
 
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.browser = "firefox";
-        Configuration.pageLoadStrategy = "eager";
-        Configuration.timeout = 5000; // default 4000
-    }
-
-    @AfterAll
-    static void afterAll() {
-        closeWebDriver();
-    }
+//    @BeforeAll
+//    static void beforeAll() {
+//        Configuration.browser = "firefox";
+//        Configuration.pageLoadStrategy = "eager";
+//        Configuration.timeout = 5000; // default 4000
+//    }
+//
+//    @AfterAll
+//    static void afterAll() {
+//        closeWebDriver();
+//    }
 }

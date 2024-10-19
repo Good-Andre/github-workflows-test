@@ -37,15 +37,15 @@ public class AttachmentTest {
         steps.takeScreenshot();
     }
 
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.browser = "firefox";
-        Configuration.pageLoadStrategy = "eager";
-        Configuration.timeout = 5000;
-    }
-
-    @AfterAll
-    static void afterAll() {
-        closeWebDriver();
-    }
+//    @BeforeAll
+//    static void beforeAll() {
+//        Configuration.browser = "firefox";
+//        Configuration.pageLoadStrategy = "eager";
+//        Configuration.timeout = 5000;
+//    }
+//
+//    @AfterAll
+//    static void afterAll() {
+//        closeWebDriver();
+//    }
 }

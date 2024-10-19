@@ -12,18 +12,17 @@ import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class SelenideTest {
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.browser = "firefox";
-        Configuration.pageLoadStrategy = "eager";
-        Configuration.timeout = 5000; // default 4000
-//        Configuration.pageLoadTimeout = 60000;
-    }
-
-    @AfterAll
-    static void afterAll() {
-        closeWebDriver();
-    }
+//    @BeforeAll
+//    static void beforeAll() {
+//        Configuration.browser = "firefox";
+//        Configuration.pageLoadStrategy = "eager";
+//        Configuration.timeout = 5000; // default 4000
+//    }
+//
+//    @AfterAll
+//    static void afterAll() {
+//        closeWebDriver();
+//    }
 
     @Test
     public void testIssueSearch() {
@@ -31,9 +30,9 @@ public class SelenideTest {
 
         open("https://github.com/eroshenkoam/allure-example");
         $("#issues-tab").click();
-        sleep(1000);
-//        $(withText("#80")).should(Condition.exist);
-        $(withText("#8000")).should(Condition.exist);
-        sleep(2000);
+//        sleep(1000);
+        $(withText("#80")).should(Condition.exist);
+//        $(withText("#8000")).should(Condition.exist);
+//        sleep(2000);
     }
 }
